@@ -4,6 +4,8 @@ import { Container } from "@/components/ui/Container";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { projects, accentCssVar, accentSoft } from "@/lib/data/projects";
+import { KoiPondSketch } from "@/components/sketches/KoiPondSketch";
+import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ id: project.id }));
@@ -21,7 +23,7 @@ export default async function ProjectPage({
   return (
     <>
       <Header />
-      <main className="relative">
+      <main className="relative animate-page-fade-in">
         <div
           aria-hidden
           className="pointer-events-none absolute -left-32 top-40 -z-10 h-[40vw] w-[40vw] rounded-full opacity-30 blur-[100px]"
@@ -54,21 +56,45 @@ export default async function ProjectPage({
                 </span>
               ))}
             </div>
+
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-background transition-opacity hover:opacity-90"
+              >
+                View Project ↗
+              </a>
+            )}
           </div>
 
-          {/* TODO: replace with the project's hero image */}
-          <div
-            className="mt-12 flex aspect-[16/9] items-center justify-center rounded-2xl sm:mt-20"
-            style={{ background: accentSoft[project.accent] }}
-          >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/60">
-              Project Image
-            </span>
-          </div>
+          {project.sketch === "koipond" ? (
+            <KoiPondSketch />
+          ) : project.video ? (
+            <video
+              key={project.video}
+              src={project.video}
+              poster={project.image}
+              controls
+              playsInline
+              preload="none"
+              className="mt-12 aspect-[16/9] w-full rounded-2xl bg-foreground/5 object-cover sm:mt-20"
+            />
+          ) : (
+            <div
+              className="mt-12 flex aspect-[16/9] items-center justify-center rounded-2xl sm:mt-20"
+              style={{ background: accentSoft[project.accent] }}
+            >
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/60">
+                Project Image
+              </span>
+            </div>
+          )}
 
           <div className="mt-4">
             {project.sections.map((section, i) => (
-              <div
+              <RevealOnScroll
                 key={section.label}
                 className="grid grid-cols-1 gap-6 border-t border-border py-10 sm:grid-cols-[1fr_2.5fr] sm:gap-12 sm:py-16"
               >
@@ -89,8 +115,17 @@ export default async function ProjectPage({
                       )}
                     </p>
                   ))}
+                  {section.video && (
+                    <video
+                      src={section.video}
+                      controls
+                      playsInline
+                      preload="none"
+                      className="aspect-video w-full rounded-2xl bg-foreground/5 object-cover"
+                    />
+                  )}
                 </div>
-              </div>
+              </RevealOnScroll>
             ))}
           </div>
         </Container>

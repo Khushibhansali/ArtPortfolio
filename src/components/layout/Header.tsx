@@ -16,17 +16,19 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="relative z-20 pt-8">
-      <Container className="flex flex-wrap items-center justify-between gap-4">
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-foreground/70">
-          {profile.tagline}
-        </p>
-        <nav className="flex items-center gap-3 text-xs font-medium uppercase tracking-[0.15em]">
+    <header className="sticky top-0 z-30 border-b border-border bg-background/90 py-4 backdrop-blur-md">
+      <Container className="flex flex-wrap items-center justify-between gap-6">
+        <Link href="/" className="group">
+        <p className="text-[12vw] font-black uppercase leading-none sm:text-[clamp(2rem,5vw,2rem)]">
+            {profile.name}
+          </p>
+        </Link>
+        <nav className="flex items-center gap-1 rounded-full border border-border p-1 text-xs font-medium uppercase tracking-[0.15em]">
           {navLinks.map((link) => {
             const isActive = link.label === "Projects" && pathname.startsWith("/projects");
             const classes = cn(
-              "rounded-full border border-border px-4 py-2 transition-colors hover:border-foreground/40 hover:bg-foreground/5",
-              isActive && "border-foreground/40 bg-foreground/5",
+              "rounded-full px-4 py-2 transition-colors hover:bg-foreground/5",
+              isActive ? "bg-foreground text-background hover:bg-foreground" : "text-foreground/80",
             );
             return link.external ? (
               <a key={link.label} href={link.href} className={classes}>

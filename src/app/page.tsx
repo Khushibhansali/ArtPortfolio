@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Hero } from "@/components/sections/Hero";
+import { ExplodedScroll } from "@/components/sections/ExplodedScroll";
 import { About } from "@/components/sections/About";
 import { CoreSkills } from "@/components/sections/CoreSkills";
 import { ProjectsTable } from "@/components/sections/ProjectsTable";
@@ -9,9 +9,9 @@ import { ProjectsTable } from "@/components/sections/ProjectsTable";
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
-        <Hero />
+        <ExplodedScroll />
+        <Header />
         <section className="border-t border-border">
           <Container className="grid grid-cols-1 gap-16 py-16 lg:grid-cols-[1.6fr_1fr] lg:gap-24 lg:py-24">
             <About />

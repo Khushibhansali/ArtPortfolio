@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { projects, accentSoft } from "@/lib/data/projects";
 
@@ -23,10 +24,20 @@ export function ProjectsTable() {
             <span className="font-mono text-sm text-muted">{project.id}</span>
 
             <div
-              className="flex h-16 w-16 items-center justify-center rounded-lg text-xs font-semibold text-foreground/60"
+              className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg text-xs font-semibold text-foreground/60"
               style={{ background: accentSoft[project.accent] }}
             >
-              {project.id}
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt=""
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              ) : (
+                project.id
+              )}
             </div>
 
             <div>
