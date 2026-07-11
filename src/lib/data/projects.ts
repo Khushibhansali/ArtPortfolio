@@ -90,7 +90,7 @@ function placeholderSections(num: string): CaseStudySection[] {
 
 const sankranti: Project = {
   id: "01",
-  title: "Exploring Dual Identity",
+  title: "Exploring Dual Identity: Flying Between Two Skies",
   role: "Interactive Installation — Concept, Design & Development",
   description:
     "A computer-vision kite-flying installation about balancing two cultures, inspired by Makar Sankranti — built with React, Vite, and MediaPipe hand tracking.",
@@ -183,7 +183,7 @@ const sankranti: Project = {
 
 const customtool: Project = {
   id: "02",
-  title: "ComfyUI Texture Map Generator - Creator Tool ",
+  title: "Prompt-to-Texture Node for ComfyUI",
   role: "Developer",
   description:
     "Provides a custom ComfyUI node that generates a full Physically Based Rendering (PBR) texture set from a text prompt for use in 3D content-creation workflows.",
@@ -277,8 +277,8 @@ const customtool: Project = {
 
 const aromasense: Project = {
     id: "03",
-    title: "AromaSense - VR Aroma Experience Concept (Top 10 US Finalist for L'Oréal Brandstorm)",
-    role: "Concept Design & VR Product Development — L'Oréal Brandstorm 2023",
+    title: "AromaSense:A Mood-to-Scent VR Experience",
+    role: "Concept Design & VR Product Development — (Top 10 US Finalist for L'Oréal Brandstorm 2023)",
     description:
       "A VR concept that lets users blend custom L'Oréal fragrances by scanning their mood, face, and voice inside an aromatherapy zen space — Top 10 US Finalist, L'Oréal Brandstorm 2023.",
     tags: ["#VR/AR", "#IMMERSIVE EXPERIENCE", "#PRODUCT DESIGN"],
@@ -512,7 +512,7 @@ const wirebend: Project = {
 
 const trashcan: Project = {
   id: "07",
-  title: "Smart IOT Trashcan",
+  title: "Teaching Cities to Recycle in Real Time",
   role: "Developer",
   description: "AI-powered smart trashcan utilizing computer vision and a custom sensor-driven hardware matrix to automate waste classification and real-time user error correction.",
   tags: ["#IOT", "#RASPBERRY PI", "#CREATIVE CODING"],
@@ -654,10 +654,10 @@ const koipond: Project = {
 
 const projectionmapping: Project = {
     id: "09",
-    title: "Real-Time Dance-to-Audio-Visual System",
+    title: "Jugalbandi: A Dancer's Duet with Light and Sound",
     role: "Developer",
     description:
-      "Coming Soon...",
+      "Real-Time Dance-to-Audio-Visual System coming soon...",
     tags: ["#TOUCH DESIGNER", "#GENERATIVE AUDIO", "#CREATIVE CODING"],
     accent: "green",
     image: "/diltohpagal.png",
