@@ -109,11 +109,11 @@ const sankranti: Project = {
           { text: " Growing up, I constantly felt pulled between worlds that sometimes seemed incompatible." },
         ],
         [
-          { text: "My Indian upbringing represented grounding — responsibility to family, collectivism, humility, and tradition. Living in America encouraged independence, self-expression, ambition, and the freedom to define success for yourself. " },
+          { text: "My Indian upbringing represented grounding, responsibility to family, collectivism, humility, and tradition. Living in America encouraged independence, self-expression, ambition, and the freedom to define success for yourself. " },
           { text: "These values sometimes clashed in deeply personal ways.", bold: true },
         ],
         [
-          { text: "I found myself translating my parents' worldview to my friends, and my friends' lifestyle back to my parents — learning the guilt of saying no to family to maintain a social life, while feeling alienated when saying no to peers to honor family obligations. Even success itself became a negotiation between external achievement and internal fulfillment." },
+          { text: "I found myself translating my parents' worldview to my friends, and my friends' lifestyle back to my parents. I learned the guilt of saying no to family to keep up a social life, and I felt alienated saying no to peers to honor family obligations. Even success itself became a negotiation between external achievement and internal fulfillment." },
         ],
         [
           { text: "This installation explores those tensions not as universal truths about any culture, but as " },
@@ -126,18 +126,18 @@ const sankranti: Project = {
       video: "/kiteidea.mp4",
       paragraphs: [
         [
-          { text: "Over time, I realized this tension was not something to escape, but something to learn from. Like a kite during " },
+          { text: "Over time, I realized this tension wasn't something to escape, but something to learn from. Like a kite during " },
           { text: "Makar Sankranti", bold: true },
-          { text: " — an Indian harvest festival celebrated through kite flying — I found that " },
+          { text: ", an Indian harvest festival celebrated through kite flying, I found that " },
           { text: "balancing opposing forces is what ultimately allows you to take flight.", bold: true },
         ],
         [
-          { text: "The kite becomes a central metaphor throughout the piece. The wind and string are not enemies — the string does not exist to restrict the kite, and the wind does not exist to pull it apart. " },
+          { text: "The kite becomes a central metaphor throughout the piece. The wind and string aren't enemies. The string doesn't exist to restrict the kite, and the wind doesn't exist to pull it apart. " },
           { text: "Both are necessary for flight.", bold: true },
-          { text: " My identity was not divided between two opposing worlds, but shaped through learning how to move between them." },
+          { text: " My identity wasn't divided between two opposing worlds, but shaped through learning how to move between them." },
         ],
         [
-          { text: "Before the kite can fly, it must first be designed. The opening scene reflects how identity is often constructed through perception — players choose a kite's shape, fabric, colors, and tail, symbolizing the tension between " },
+          { text: "Before the kite can fly, it has to be designed first. The opening scene reflects how identity is often built through perception. Players choose a kite's shape, fabric, colors, and tail, symbolizing the tension between " },
           { text: "self-expression and external expectation.", bold: true },
         ],
       ],
@@ -151,8 +151,8 @@ const sankranti: Project = {
           { text: " Using a live laptop camera feed, players physically hold and balance two virtual kite strings with their hands." },
         ],
         [
-          { text: "As the kite rises, challenges emerge that represent moments of cultural negotiation from my own life. The player must continuously balance opposing pressures to keep the kite airborne — " },
-          { text: "the interaction is intentionally unstable", bold: true },
+          { text: "As the kite rises, challenges emerge that represent moments of cultural negotiation from my own life. The player must continuously balance opposing pressures to keep the kite airborne. " },
+          { text: "The interaction is intentionally unstable", bold: true },
           { text: ", reflecting how exhausting and delicate identity negotiation can feel in real life." },
         ],
         [
@@ -170,7 +170,7 @@ const sankranti: Project = {
         [
           { text: "Rather than presenting dual identity as a problem to solve, " },
           { text: "Sankranti frames it as an act of continuous navigation", bold: true },
-          { text: " — one that can become a source of strength, resilience, and flight." },
+          { text: ", one that can become a source of strength, resilience, and flight." },
         ],
         [
           { text: "Planned next steps include " },
@@ -231,26 +231,26 @@ const customtool: Project = {
         "label": "System Design",
         "paragraphs": [
           [
-            { "text": "The node architecture is designed for seamless integration and modular expansion within ComfyUI, separating asset computation into a clean, multi-map pipeline. Upon receiving a text prompt, the underlying backend splits the generation task into six distinct channels: " },
+            { "text": "The node architecture is designed for seamless integration and modular expansion within ComfyUI, separating asset computation into a clean, multi-map pipeline. Upon receiving a text prompt, the underlying backend splits the generation task into six distinct channels, including " },
             { "text": "Albedo (Base Color), Normal maps, Roughness data, Metallic attributes, Ambient Occlusion (AO) shadowing, and Displacement (Height) data.", "bold": true }
           ],
           [
-            { "text": "The software implementation relies on a lightweight, modular repository architecture:" }
+            { "text": "The software implementation relies on a lightweight, modular repository architecture." }
           ],
           [
             { "text": "• " },
-            { "text": "__init__.py :", "bold": true },
-            { "text": " Registers the custom node within ComfyUI by exporting node class and display name mappings." }
+            { "text": "__init__.py", "bold": true },
+            { "text": " registers the custom node within ComfyUI by exporting node class and display name mappings." }
           ],
           [
             { "text": "• " },
-            { "text": "pbr.py :", "bold": true },
-            { "text": " The core execution logic. Defines data inputs, texture channels, and structural inference systems." }
+            { "text": "pbr.py", "bold": true },
+            { "text": " holds the core execution logic, defining the data inputs, texture channels, and structural inference systems." }
           ],
           [
             { "text": "• " },
-            { "text": "requirements.txt :", "bold": true },
-            { "text": " Isolates and manages the necessary Python library dependencies for processing backend data." }
+            { "text": "requirements.txt", "bold": true },
+            { "text": " isolates and manages the Python library dependencies needed to process backend data." }
           ]
         ]
       },
@@ -293,17 +293,17 @@ const aromasense: Project = {
             [
               { "text": "L'Oréal Brandstorm 2023 was an international pitch competition challenging teams to use " },
               { "text": "AI, AR/VR, and metaverse technologies", "bold": true },
-              { "text": " to increase personalization and inclusivity and reach a broader, younger demographic — with the goal of turning the winning pitch into a real product." }
+              { "text": " to increase personalization and inclusivity and reach a broader, younger demographic, with the goal of turning the winning pitch into a real product." }
             ],
             [
               { "text": "L'Oréal had already backed groundbreaking products like " },
               { "text": "HAPTA", "bold": true },
-              { "text": ", which blends seamless online-to-offline experiences with AI-driven personalization, and its collaborations with startups underscored a real appetite for innovative beauty products and services — this was fertile ground for a bold pitch." }
+              { "text": ", which blends seamless online-to-offline experiences with AI-driven personalization, and its collaborations with startups underscored a real appetite for innovative beauty products and services. This was fertile ground for a bold pitch." }
             ],
             [
               { "text": "At the same time, in 2023 Forbes reported that " },
-              { "text": "66-90% of Gen Z experiences anxiety, depression, phobias, or PTSD", "bold": true },
-              { "text": " — conditions shown to be reduced through VR therapy. Yet the fragrance industry remained entirely physical and one-size-fits-all, with no bridge connecting L'Oréal's perfume line to the immersive wellness tech Gen Z was already turning to." }
+              { "text": "66 to 90% of Gen Z experiences anxiety, depression, phobias, or PTSD", "bold": true },
+              { "text": ", conditions shown to be reduced through VR therapy. Yet the fragrance industry remained entirely physical and one-size-fits-all, with no bridge connecting L'Oréal's perfume line to the immersive wellness tech Gen Z was already turning to." }
             ]
           ]
         },
@@ -318,7 +318,7 @@ const aromasense: Project = {
             [
               { "text": "Instead of treating scent as a static purchase, we reframed it as a " },
               { "text": "personalized wellness ritual", "bold": true },
-              { "text": " — leaning on VR's proven therapeutic effects on anxiety and mood to turn fragrance discovery into a moment of aromatherapy and self-care." }
+              { "text": ", leaning on VR's proven therapeutic effects on anxiety and mood to turn fragrance discovery into a moment of aromatherapy and self-care." }
             ]
           ]
         },
@@ -338,7 +338,7 @@ const aromasense: Project = {
             [
               { "text": "Once satisfied, users personalize the " },
               { "text": "3D design of the bottle", "bold": true },
-              { "text": " and complete the purchase directly through the L'Oréal store — closing the loop from mood scan to product in hand." }
+              { "text": " and complete the purchase directly through the L'Oréal store, closing the loop from mood scan to product in hand." }
             ]
           ]
         },
@@ -381,7 +381,7 @@ const paintbynumbers: Project = {
         "label": "The Problem",
         "paragraphs": [
           [
-            { "text": "Capturing memories while traveling often relies on flat, passive mediums like standard smartphone photos or generic, store-bought postcards. For artists and creators on the go, these digital snapshots fail to convey the tactile, meditative experience of physically painting a landscape as you thought of it during a journey. Conversely, traditional painting is highly unapproachable while traveling due to the heavy burden of carrying extensive art supplies, palettes, and mixing tools. Furthermore, once a travel memory is shared, static physical media lacks the spatial depth to fully transport a loved one into the exact, immersive atmosphere of the destination."}
+            { "text": "Capturing memories while traveling usually relies on flat, passive mediums like standard smartphone photos or generic, store-bought postcards. For artists and creators on the go, these digital snapshots don't convey the tactile, meditative feeling of physically painting a landscape as you experienced it during a journey. Traditional painting, on the other hand, is hard to do while traveling because of the burden of carrying extensive art supplies, palettes, and mixing tools. And once a travel memory is shared, static physical media doesn't have the spatial depth to fully transport a loved one into the immersive atmosphere of the destination."}
           ]
         ]
       },
@@ -389,7 +389,7 @@ const paintbynumbers: Project = {
         "label": "Approach",
         "paragraphs": [
           [
-            { "text":"To bridge the gap between spontaneous physical art and immersive digital storytelling, this project introduces a mobile, automated paint-by-numbers ecosystem designed for creators on the move. By leveraging a custom-coded computer vision pipeline, the system distills any smartphone travel photograph into a simplified, paintable canvas and a minimalist, highly curated color palette that eliminates the need for extensive art supplies. The final artwork is exported onto a dual-sided, ready-to-print postcard format. While one side hosts the tactile painting template and localized palette guide, the reverse side integrates a custom-generated Web3 or WebXR QR code—allowing the recipient to step directly into a 3D, virtual reality reimagining of the painted scene as if experiencing the traveler's physical journey firsthand."},
+            { "text":"To bridge the gap between spontaneous physical art and immersive digital storytelling, this project introduces a mobile, automated paint-by-numbers ecosystem built for creators on the move. Using a custom computer vision pipeline, the system turns any smartphone travel photo into a simplified, paintable canvas with a minimal, curated color palette, cutting out the need for extensive art supplies. The final artwork is exported onto a dual-sided, ready-to-print postcard. One side holds the tactile painting template and a localized palette guide, while the other side carries a custom-generated Web3 or WebXR QR code that lets the recipient step directly into a 3D, virtual reality reimagining of the painted scene, as if experiencing the traveler's journey firsthand."},
           ]
         ]
       },
@@ -397,7 +397,7 @@ const paintbynumbers: Project = {
         "label": "System Design",
         "paragraphs": [
           [
-            { "text": "The platform architecture is structured around an integrated pipeline that coordinates a back-end computer vision engine, a custom print-layout wrapper, and an immersive, browser-based spatial environment. The workflow begins when a user uploads a smartphone photograph to the application. A custom-coded computer vision script—utilizing color quantization algorithms like K-Means clustering—analyzes the pixel matrix of the image to isolate and extract its core dominant colors, effectively distilling a complex landscape down to a tight, minimalist palette. Once the primary colors are established, the engine applies edge-detection and mathematical contour-mapping filters to trace clean vector boundaries between the color zones, transforming the source photograph into a precise, unpainted vector canvas matrix. Following the asset generation phase, a custom print layout engine structures the data into a print-ready, dual-sided postcard blueprint adhering to exact real-world dimensions. Side A is dynamically generated to display the numbered contour art canvas alongside a specific, localized ink-swatch guide detailing the exact extracted colors required for the physical painting. Simultaneously, Side B compiles a standardized mailing layout, mapping out a clean message window, a postage stamp boundary, and a uniquely generated QR code tied directly to that specific asset's spatial coordinate profile. The final layer of the architecture governs the digital transformation loop through an accessible WebXR and Three.js framework. When the recipient scans the postcard's QR code, it instantly triggers a web-based, hardware-agnostic spatial environment that requires no external app downloads. The system reads the original source image data to procedurally map the textures onto a responsive 3D scene or a spherical panorama. This creates an immersive virtual reality depth layer, allowing the user to seamlessly move their device or use a mobile headset to step into a 3D, wrapped environment of the exact travel destination."}
+            { "text": "The platform runs on an integrated pipeline that connects a backend computer vision engine, a custom print layout wrapper, and an immersive, browser-based spatial environment. It starts when a user uploads a smartphone photo to the app. A custom-coded computer vision script uses color quantization algorithms like K-Means clustering to analyze the image's pixel matrix and pull out its core dominant colors, distilling a complex landscape down to a tight, minimal palette. Once the primary colors are set, the engine applies edge detection and contour mapping filters to trace clean vector boundaries between the color zones, turning the source photo into a precise, unpainted vector canvas. From there, a custom print layout engine arranges the data into a print-ready, dual-sided postcard sized to exact real-world dimensions. Side A shows the numbered contour art canvas along with a localized ink swatch guide listing the exact colors needed for the physical painting. Side B lays out a standard mailing template, with a message window, a postage stamp boundary, and a QR code generated specifically for that asset's spatial coordinates. The last piece of the architecture handles the digital transformation loop through an accessible WebXR and Three.js setup. When the recipient scans the postcard's QR code, it instantly opens a web-based, hardware-agnostic spatial environment that needs no app download. The system reads the original image data to map the textures onto a responsive 3D scene or a spherical panorama, creating an immersive VR depth layer that lets the user move their device, or put on a headset, to step into a 3D version of the exact travel destination."}
           ]
         ]
       },
@@ -405,7 +405,7 @@ const paintbynumbers: Project = {
         "label": "Results / Metrics",
         "paragraphs": [
           [
-            { "text": "The completed pipeline successfully transformed spontaneous travel photography into a highly functional, interactive physical-to-digital keepsake. The computer vision model achieved optimized color quantization, consistently reducing complex landscape gradients down to less than ten highly distinct, essential color zones without sacrificing the original composition’s visual recognizability. Hardware compatibility testing verified that the generated postcard designs perfectly maintained standard printing dimensions, bleed boundaries, and scaling metrics. Finally, the automated VR engine maintained clean interoperability across multiple mobile web browsers, triggering full spatial immersion within milliseconds of scanning the postcard's QR code."}
+            { "text": "The finished pipeline turns spontaneous travel photography into a functional, interactive physical-to-digital keepsake. The computer vision model handles color quantization well, consistently reducing complex landscape gradients down to fewer than ten distinct color zones without losing the original composition's visual character. Hardware testing confirmed the generated postcard designs held standard printing dimensions, bleed boundaries, and scaling accurately. The automated VR engine also stayed consistent across multiple mobile web browsers, triggering full spatial immersion within milliseconds of scanning the postcard's QR code."}
           ]
         ]
       }
@@ -428,7 +428,7 @@ const musicalpainting: Project = {
         "label": "The Problem",
         "paragraphs": [
           [
-            { "text": "Traditional classic art is inherently static and passive. For an immersive event like a Halloween-themed installation, a flat visual medium alone fails to fully engage the audience's senses or amplify the atmospheric, eerie essence intended by the original piece." },
+            { "text": "Traditional fine art is static and passive by nature. For an immersive event like a Halloween-themed installation, a flat visual piece alone can't fully engage the audience's senses or bring out the atmospheric, eerie feeling the original painting intended." },
           ]
         ]
       },
@@ -437,7 +437,7 @@ const musicalpainting: Project = {
         "paragraphs": [
           [
             { "text": "The goal was to bridge the gap between traditional fine art and physical computing." },
-            { "text": " By recreating Edvard Munch's The Scream, the project fused classic imagery with modern tech to create a multi-sensory, touch-activated experience that brings the painting's inherent anxiety and spookiness into the physical space." }
+            { "text": " Recreating Edvard Munch's The Scream, the project fused classic imagery with modern tech to build a multi-sensory, touch-activated experience that brings the painting's inherent anxiety and spookiness into the physical space." }
           ]
         ]
       },
@@ -445,7 +445,7 @@ const musicalpainting: Project = {
         "label": "System Design",
         "paragraphs": [
           [
-            { "text": "To bring the canvas to life, the installation relies on an integrated hardware and software pipeline centered around a Raspberry Pi. The physical interface was constructed by applying electrically conductive paint over copper wiring hidden beneath the painting's surface, mapping out specific touch-responsive zones on The Scream. These conductive pathways act as capacitive sensors wired directly into the Raspberry Pi’s GPIO pins. The software logic was written and deployed using VS Code, where a Python script continuously polls the pins for electrical resistance changes caused by human touch, instantaneously triggering specific audio files through the Pi’s sound card when a contact event is registered."}
+            { "text": "To bring the canvas to life, the installation runs on an integrated hardware and software pipeline centered around a Raspberry Pi. The physical interface was built by applying electrically conductive paint over copper wiring hidden beneath the painting's surface, mapping out specific touch-responsive zones on The Scream. These conductive pathways act as capacitive sensors wired directly into the Raspberry Pi's GPIO pins. The software was written and deployed in VS Code, where a Python script continuously polls the pins for electrical resistance changes caused by human touch, instantly triggering specific audio files through the Pi's sound card whenever a contact event is registered."}
           ]
         ]
       },
@@ -454,7 +454,7 @@ const musicalpainting: Project = {
         video: "/scream2.mov",
         "paragraphs": [
           [
-            { "text": "System performance was evaluated by the accuracy and latency of the interaction loop, achieving seamless real-time audio playback within milliseconds of physical touch. The code architecture managed debouncing logic flawlessly, ensuring that rapid, consecutive touches cleanly cycled through the different spooky soundtracks without overlapping or crashing the audio driver. The final system state and its interactive audio-visual feedback loops were fully validated and documented in the accompanying project videos."}
+            { "text": "Performance was measured by the accuracy and latency of the interaction loop, and it hit seamless real-time audio playback within milliseconds of physical touch. The code handled debouncing logic flawlessly, so rapid, consecutive touches cleanly cycled through the different spooky soundtracks without overlapping or crashing the audio driver. The final system and its interactive audio-visual feedback loops were fully tested and documented in the accompanying project videos."}
           ]
         ]
       }
@@ -478,7 +478,7 @@ const wirebend: Project = {
         "label": "The Problem",
         "paragraphs": [
           [
-            { "text": "Traditional 3D wire-bending machines operate on rigid hardware constraints, often requiring custom code or deep technical expertise to program physical paths. This creates a steep barrier to entry for creators, designers, and non-technical operators. Furthermore, designing blindly in a digital space without real-time physical feedback leads to frequent structural failures, machine collisions, and material waste, as there is no built-in mechanism to check if a digital shape is actually manufacturable by the physical bender."}
+            { "text": "Traditional 3D wire-bending machines run on rigid hardware constraints and usually require custom code or deep technical expertise to program physical paths. That creates a steep barrier to entry for creators, designers, and non-technical operators. On top of that, designing blindly in a digital space without real-time physical feedback leads to frequent structural failures, machine collisions, and material waste, since there's no built-in way to check if a digital shape is actually manufacturable by the physical bender."}
           ],
           
         ]
@@ -487,7 +487,7 @@ const wirebend: Project = {
         "label": "Approach",
         "paragraphs": [
           [
-            { "text": "To democratize this fabrication process, I collaboratively developed a interactive 3D plugin software tailored specifically to the wire-bending machine'/s physics. By embedding the machine's hardware constraints directly into a visual engineering environment, we shifted the workflow from programming to intuitive modeling. This ensures that any geometry a user draws is mathematically feasible, automatically catching potential manufacturing errors and collision risks before the design ever hits the shop floor."}
+            { "text": "To make this fabrication process more accessible, I helped develop an interactive 3D plugin tailored specifically to the wire-bending machine's physics. By embedding the machine's hardware constraints directly into a visual engineering environment, we shifted the workflow from programming to intuitive modeling. This makes sure any geometry a user draws is mathematically feasible, automatically catching potential manufacturing errors and collision risks before the design ever reaches the shop floor."}
           ]
         ]
       },
@@ -495,7 +495,7 @@ const wirebend: Project = {
         "label": "System Design",
         "paragraphs": [
           [
-            { "text": "Built natively in Unity, the software architecture cleanly separates back-end geometry computation from front-end user interaction. For the core physics and simulation engine, C# scripts govern the virtual wire object's behavior, executing real-time bend, rotation, and linear extension algorithms while simultaneously running a continuous background collision-detection routine to flag geometry that physically impacts the machine frame. The UX and interaction layer features a comprehensive camera rigging system supporting adaptive orbiting, panning, and zooming optimized across both trackpads and standard mice, alongside an onboarding portal, guided instructional tutorials, and dynamic canvas overlays detailing live spatial dimensioning. Finally, the hardware integration pipeline translates the virtual 3D vector model into physical machine instructions via a custom-coded C# exporter that applies precise real-world dimensional scaling matrices to the digital coordinates, outputting a streamlined CSV file compiled specifically to mirror the syntax requirements of the physical Wire Terminal software." }
+            { "text": "Built natively in Unity, the software cleanly separates backend geometry computation from front-end user interaction. For the core physics and simulation engine, C# scripts govern the virtual wire object's behavior, running real-time bend, rotation, and linear extension calculations while also running a continuous background collision-detection routine to flag geometry that physically hits the machine frame. The UX layer includes a full camera rigging system supporting adaptive orbiting, panning, and zooming across both trackpads and standard mice, along with an onboarding portal, guided tutorials, and dynamic canvas overlays showing live spatial dimensions. Finally, the hardware integration pipeline translates the virtual 3D vector model into physical machine instructions through a custom C# exporter that applies precise real-world dimensional scaling to the digital coordinates, outputting a streamlined CSV file built to match the syntax the physical Wire Terminal software expects." }
           ]
         ]
       },
@@ -503,7 +503,7 @@ const wirebend: Project = {
         "label": "Results / Metrics",
         "paragraphs": [
           [
-            { "text": "The collaborative engineering effort yielded a fully functional, verified end-to-end CAD-to-fabrication pipeline. Rigorous validation testing confirmed that the generated spatial coordinates successfully imported into the Wire Terminal environment with zero orientation errors, maintaining flawless dimensional accuracy from the digital canvas to the physical machine. System-wide code refactoring successfully unified complex physical keyboard bindings with active UI button states, streamlining function mapping and significantly lowering latency during live manipulation. Furthermore, comprehensive edge-case testing and quality control sweeps verified the complete stability of the simulation, ensuring a reliable, crash-free interface ready for deployment to non-technical users."}
+            { "text": "The collaborative engineering effort produced a fully functional, verified end-to-end CAD-to-fabrication pipeline. Testing confirmed that the generated spatial coordinates imported into the Wire Terminal environment with zero orientation errors, keeping dimensional accuracy consistent from the digital canvas to the physical machine. A round of code refactoring unified complex physical keyboard bindings with active UI button states, streamlining function mapping and lowering latency during live manipulation. Further edge-case testing and quality checks confirmed the simulation was fully stable, giving a reliable, crash-free interface ready for non-technical users."}
           ]
         ]
       }
@@ -526,7 +526,7 @@ const trashcan: Project = {
         "label": "The Problem",
         "paragraphs": [
           [
-            { "text": "Public spaces like airports, malls, and stadiums generate massive volumes of waste, yet a significant portion is missorted due to consumers lacking the time, convenience, or localized knowledge to distinguish between recyclables, compost, batteries, and general trash. This widespread sorting failure leads to severe recycling contamination, increased landfill waste, and missed opportunities for material recovery. Furthermore, standard waste infrastructure remains completely passive. It fails to educate users in real time, lacks data collection on consumption habits, and relies on manual, inefficient physical inspections by facility staff to determine when a bin needs to be emptied."}
+            { "text": "Public spaces like airports, malls, and stadiums generate huge volumes of waste, yet a lot of it gets missorted because people lack the time, convenience, or local knowledge to tell recyclables, compost, batteries, and general trash apart. This sorting failure leads to serious recycling contamination, more landfill waste, and missed chances for material recovery. On top of that, standard waste infrastructure stays completely passive. It doesn't educate users in real time, doesn't collect data on consumption habits, and relies on manual, inefficient physical checks by facility staff to figure out when a bin needs to be emptied."}
         ]
         ]
       },
@@ -534,7 +534,7 @@ const trashcan: Project = {
         "label": "Approach",
         "paragraphs": [
           [
-            { "text": "To address these inefficiencies, the team developed an intelligent, interactive waste management ecosystem that automates classification and gamifies environmental responsibility. By placing a smart, sensor-driven sorting hub in high-traffic areas, the system removes the cognitive burden of recycling from busy individuals. The approach leverages an adaptable machine learning model coupled with a real-time, closed-loop feedback mechanism. Instead of relying on a static, rigid classification database, the system is designed around continuous user-centric learning—allowing real-time failure correction where users can actively flag misclassifications, directly contributing to the system's long-term accuracy and adaptability."}
+            { "text": "To fix these inefficiencies, the team built an intelligent, interactive waste management system that automates classification and gamifies environmental responsibility. By placing a smart, sensor-driven sorting hub in high-traffic areas, the system takes the cognitive burden of recycling off busy people. The approach relies on an adaptable machine learning model paired with a real-time, closed-loop feedback mechanism. Instead of relying on a static, rigid classification database, the system is built around continuous, user-centric learning, letting users actively flag misclassifications in real time and directly improve the system's long-term accuracy and adaptability."}
           ]
         ]
       },
@@ -542,9 +542,9 @@ const trashcan: Project = {
         "label": "System Design",
         "paragraphs": [
           [
-            { "text": "The architecture integrates a custom-coded computer vision pipeline with a highly specialized, hand-built physical computing infrastructure to automate waste classification. At its core, the system utilizes a Teachable Machine model to handle real-time object recognition across multiple waste streams. To support this digital pipeline, the physical scanning areas and customized lids for each individual trash bin, along with a dedicated battery bin, were custom-designed and precision laser-cut. The physical prototype assembly required a complex, hand-wired network connecting multiple distance sensors, buttons, and servo motors directly to the main control hub. This included uniquely soldering the hardware profiles for seven distinct LED buttons, ensuring each input maintained a designated, unique address on the shared system bus."},
-            { "text": "On the software and interface layer, custom Python algorithms govern the complete end-to-end operation of the waste hub. The central script captures input from the camera to scan the object, processes the frame through the machine learning model, and immediately outputs the classification results directly to the user. Simultaneously, a mechanical actuation script drives precise servo control to physically open the lid of the corresponding bin. To display these interactions seamlessly, an interactive iPad dashboard features a custom-designed layout managing the camera background, alignment targets, and active item labels. This interface acts as the primary hub for the system's user feedback and misclassification correction loops, enabling real-time continuous learning from human inputs."},
-            { "text": "To maintain facility awareness, the system integrates a multi-sensor telemetry layer to track bin capacity and waste metrics. A specialized distance-sensing algorithm was programmed to read multiple proximity sensors simultaneously, accurately calculating structural fill levels and providing real-time data indicating when a bin is full and requires maintenance. As items are successfully sorted, a tracking database logs each disposal event to calculate rolling metrics. These aggregated recycling statistics are systematically pushed to a dedicated dashboard layout on the iPad screen, giving users clear, real-time visibility into local conservation data and current disposal impact."}
+            { "text": "The architecture combines a custom computer vision pipeline with a highly specialized, hand-built physical computing setup to automate waste classification. At its core, the system uses a Teachable Machine model to handle real-time object recognition across multiple waste streams. To support this, the physical scanning areas and customized lids for each individual trash bin, along with a dedicated battery bin, were custom-designed and precision laser-cut. Building the physical prototype meant hand-wiring a network connecting multiple distance sensors, buttons, and servo motors directly to the main control hub, including soldering the hardware for seven distinct LED buttons so each input kept a designated, unique address on the shared system bus."},
+            { "text": "On the software side, custom Python scripts run the complete end-to-end operation of the waste hub. The central script captures input from the camera to scan the object, runs the frame through the machine learning model, and immediately shows the classification results to the user. At the same time, a mechanical actuation script drives precise servo control to physically open the lid of the matching bin. To display these interactions, an interactive iPad dashboard has a custom-designed layout managing the camera background, alignment targets, and active item labels. This interface is the primary hub for the system's user feedback and misclassification correction loop, enabling real-time continuous learning from human input."},
+            { "text": "To keep the facility informed, the system includes a multi-sensor telemetry layer that tracks bin capacity and waste metrics. A distance-sensing algorithm reads multiple proximity sensors at once, calculating fill levels and flagging in real time when a bin is full and needs attention. As items get sorted, a tracking database logs each disposal event to calculate rolling metrics. These recycling statistics get pushed to a dedicated dashboard on the iPad screen, giving users clear, real-time visibility into local conservation data and their disposal impact."}
           ]
         ]
       },
@@ -552,7 +552,7 @@ const trashcan: Project = {
         "label": "Results / Metrics",
         "paragraphs": [
           [
-            { "text": "The deployment of the automated waste system yielded strong benchmarks in interactive environmental education and hardware synergy. The machine learning model successfully demonstrated dynamic object recognition across four distinct waste streams, showing a measurable trajectory of increasing accuracy through its user-driven data-capture loops. Hardware integration proved highly resilient, managing complex sensor telemetry, error handling, and debouncing logic smoothly during live public sorting trials. Additionally, by publicly displaying the real-time aggregated quantities of recycled materials, the system successfully drove consumer engagement, fostering a measurable sense of shared ecological responsibility and establishing a scalable framework for sustainable public infrastructure."}
+            { "text": "The deployment of the automated waste system hit strong benchmarks for interactive environmental education and hardware performance. The machine learning model showed dynamic object recognition across four distinct waste streams, with measurably increasing accuracy through its user-driven data-capture loop. The hardware held up well, managing complex sensor telemetry, error handling, and debouncing logic smoothly during live public sorting trials. By publicly showing the real-time totals of recycled materials, the system also drove consumer engagement, building a measurable sense of shared ecological responsibility and setting up a scalable framework for sustainable public infrastructure."}
         ]
       ]
       }
@@ -575,11 +575,11 @@ const koipond: Project = {
         "label": "The Problem",
         "paragraphs": [
           [
-            { "text": "A still image can only hint at what makes a pond feel alive — the way koi drift and turn, the way light keeps rearranging itself across the surface. I wanted a piece that " },
+            { "text": "A still image can only hint at what makes a pond feel alive, the way koi drift and turn, the way light keeps rearranging itself across the surface. I wanted a piece that " },
             { "text": "never repeats itself and never needs a viewer to press play.", "bold": true }
           ],
           [
-            { "text": "I was drawn to spaces where architecture and shifting light collide — vaulted rooms where sun through stained glass fractures into moving color across the floor. That same restless, prismatic quality felt like the right language for water: never one fixed palette, always catching a different hue." },
+            { "text": "I was drawn to spaces where architecture and shifting light collide, vaulted rooms where sun through stained glass fractures into moving color across the floor. That same restless, prismatic quality felt like the right language for water, never one fixed palette, always catching a different hue." },
           ],
           [
             { "text": "The challenge was combining that organic, unrepeatable motion with something classical and " },
@@ -591,12 +591,12 @@ const koipond: Project = {
         "label": "Approach",
         "paragraphs": [
           [
-            { "text": "The piece is built as a small ecosystem of autonomous agents — " },
-            { "text": "fish, lily pads, and cherubs — each governed by simple rules that compound into believable, unscripted behavior.", "bold": true },
+            { "text": "The piece is built as a small ecosystem of autonomous agents, " },
+            { "text": "fish, lily pads, and cherubs, each governed by simple rules that compound into believable, unscripted behavior.", "bold": true },
             { "text": " Fish wander by continuously nudging their own heading rather than following a path, so no two loops of the sketch ever swim the same route twice." }
           ],
           [
-            { "text": "Rather than treat color as fixed, hue itself became a variable that drifts over time — on fish scales, lily rims, and ripple rings — so the water always looks like it's catching " },
+            { "text": "Rather than treat color as fixed, hue itself became a variable that drifts over time, on fish scales, lily rims, and ripple rings, so the water always looks like it's catching " },
             { "text": "light from somewhere just out of frame.", "bold": true }
           ],
           [
@@ -610,21 +610,21 @@ const koipond: Project = {
           [
             { "text": "Built in " },
             { "text": "p5.js instance mode", "bold": true },
-            { "text": ", mounted inside a React component so the sketch lives directly on this page rather than as an embedded iframe. Four lightweight object types drive the scene: " },
+            { "text": ", mounted inside a React component so the sketch lives directly on this page rather than as an embedded iframe. Four lightweight object types drive the scene, " },
             { "text": "Fish, LilyPad, Cherub, and Ripple.", "bold": true }
           ],
           [
             { "text": "Fish perturb their own steering angle every frame and occasionally spawn a " },
             { "text": "Ripple", "bold": true },
-            { "text": " as they move, which expands and fades until it clears itself from the array — a self-managing particle system with no fixed lifetime." }
+            { "text": " as they move, which expands and fades until it clears itself from the array, a self-managing particle system with no fixed lifetime." }
           ],
           [
             { "text": "The iridescent aesthetic comes from " },
-            { "text": "HSB color cycling composited with additive blending:", "bold": true },
-            { "text": " ripple strokes, a sheen along each fish's spine, and thin rim highlights on the lily pads all cycle hue against the frame count, while soft rotated light beams drift across the whole canvas — echoing the way stained-glass light fractures into color on a reflective floor." }
+            { "text": "HSB color cycling composited with additive blending.", "bold": true },
+            { "text": " Ripple strokes, a sheen along each fish's spine, and thin rim highlights on the lily pads all cycle hue against the frame count, while soft rotated light beams drift across the whole canvas, echoing the way stained-glass light fractures into color on a reflective floor." }
           ],
           [
-            { "text": "The canvas itself is fully responsive — a " },
+            { "text": "The canvas itself is fully responsive. A " },
             { "text": "ResizeObserver", "bold": true },
             { "text": " keeps it locked to its container's aspect ratio, and a click anywhere on the pond drops a feed point that steers nearby fish toward the cursor before fading out." }
           ]
@@ -635,13 +635,13 @@ const koipond: Project = {
         "paragraphs": [
           [
             { "text": "The result is a " },
-            { "text": "self-sustaining ambient artwork", "bold": true },
-            { "text": " — it runs indefinitely with no input required, never exactly repeating a frame, while staying visually anchored by its classical frame and vignette." }
+            { "text": "self-sustaining ambient artwork.", "bold": true },
+            { "text": " It runs indefinitely with no input required, never exactly repeating a frame, while staying visually anchored by its classical frame and vignette." }
           ],
           [
             { "text": "Clicking anywhere on the pond now " },
-            { "text": "drops a feed point that draws the fish in", "bold": true },
-            { "text": " — they steer toward the cursor, quicken their pace, then jostle and mill around it before the feeding cue fades and they drift back to their ordinary wandering." }
+            { "text": "drops a feed point that draws the fish in.", "bold": true },
+            { "text": " They steer toward the cursor, quicken their pace, then jostle and mill around it before the feeding cue fades and they drift back to their ordinary wandering." }
           ],
           [
             { "text": "Planned next steps include " },
@@ -668,7 +668,7 @@ const projectionmapping: Project = {
           "label": "The Problem",
           "paragraphs": [
             [
-              { "text": "In most tech-infused dance shows, the digital elements feel like an afterthought—the dancer simply moves to a pre-recorded track while cool visuals play passively in the background. There is no real connection between the performer and the room. Think back to the iconic scene in Dil To Pagal Hai, where Madhuri Dixit dances furiously while Shah Rukh Khan matches her beat for beat on the drums; it is a thrilling, high-energy conversation where two artists challenge and answer each other in real time. Currently, a solo dancer cannot easily recreate that magical dialogue with technology. Existing systems don't allow a dancer's physical body to actually create the music and the visuals on the fly, missing the chance to turn the stage into a living partner that talks back to them."}
+              { "text": "In most tech-infused dance shows, the digital elements feel like an afterthought. The dancer simply moves to a recorded track while cool visuals play passively in the background, and there's no real connection between the performer and the room. Think back to the iconic scene in Dil To Pagal Hai, where Madhuri Dixit dances furiously while Shah Rukh Khan matches her beat for beat on the drums. It's a thrilling, high-energy conversation where two artists challenge and answer each other in real time. Right now, a solo dancer can't easily recreate that magical dialogue with technology. Existing systems don't let a dancer's physical body actually create the music and the visuals on the fly, missing the chance to turn the stage into a living partner that talks back to them."}
             ]
           ]
         },
@@ -676,7 +676,7 @@ const projectionmapping: Project = {
           "label": "Approach",
           "paragraphs": [
             [
-              { "text": "This project redefines the relationship between performer and multimedia by positioning the dancer as both the choreographer and the musician. By leveraging advanced machine learning-based computer vision, the system translates the dancer’s kinetic energy, velocity, and spatial positioning into real-time trigger data. Instead of dancing to a track, the performer’s sharp gestures mimic the strike of a drum, and fluid movements stretch or modulate melodic notes, effectively recreating a self-contained digital jugalbandi. This dynamically synthesized audio is then instantly fed back into a generative visual ecosystem, making the stage an active participant that answers the dancer's movements in a continuous, expressive conversation."}
+              { "text": "This project redefines the relationship between performer and multimedia by positioning the dancer as both the choreographer and the musician. Using machine learning based computer vision, the system translates the dancer's kinetic energy, velocity, and spatial positioning into real-time trigger data. Instead of dancing to a track, the performer's sharp gestures mimic the strike of a drum, and fluid movements stretch or shape melodic notes, recreating a self-contained digital jugalbandi. This synthesized audio is then instantly fed back into a generative visual system, making the stage an active participant that answers the dancer's movements in a continuous, expressive conversation."}
             ]
           ]
         },
@@ -684,7 +684,7 @@ const projectionmapping: Project = {
           "label": "System Design",
           "paragraphs": [
             [
-              { "text": "The architecture is divided into three integrated pipelines: motion capture, audio synthesis, and visual rendering. A high-definition camera or depth sensor feeds live video into a computer vision model (such as MediaPipe or MoveNet via TouchDesigner), extracting real-time skeletal coordinates and optical flow data. This kinetic data is translated into MIDI and OSC (Open Sound Control) signals, which are routed into an audio engine (like Ableton Live or Max/MSP) to trigger percussive samples and modulate synthesizers based on movement velocity. Finally, both the raw motion channels and the resulting audio frequencies are processed natively within TouchDesigner using Python and GPU-accelerated particle systems, rendering striking, audio-reactive visual projections that adapt to the performance with minimal overhead."}
+              { "text": "The architecture splits into three connected pipelines, motion capture, audio synthesis, and visual rendering. A high-definition camera or depth sensor feeds live video into a computer vision model (such as MediaPipe or MoveNet via TouchDesigner), pulling out real-time skeletal coordinates and optical flow data. This kinetic data gets translated into MIDI and OSC (Open Sound Control) signals, which route into an audio engine (like Ableton Live or Max/MSP) to trigger percussive samples and shape synthesizers based on movement velocity. Finally, both the raw motion channels and the resulting audio frequencies get processed natively within TouchDesigner using Python and GPU-accelerated particle systems, rendering striking, audio-reactive visual projections that adapt to the performance with minimal overhead."}
             ]
           ]
         },
@@ -692,7 +692,7 @@ const projectionmapping: Project = {
           "label": "Results / Metrics",
           "paragraphs": [
             [
-              { "text": "The success of the system is measured by its responsiveness, technical stability, and artistic fidelity. Architected for live performance, the entire pipeline operates with an ultra-low latency of under 30 milliseconds, ensuring that the visual and auditory feedback feels instantaneous to both the performer and the audience. System performance is optimized to maintain a consistent 60 frames per second (FPS) at 4K resolution, eliminating immersion-breaking stutter. Qualitatively, user testing with trained dancers evaluates creative agency —measuring how intuitively performers can control the rhythm and interpret the visual echo, successfully reviving the classic, improvisational magic of a live jugalbandi in a digital medium."}
+              { "text": "Success here comes down to responsiveness, technical stability, and artistic fidelity. Built for live performance, the entire pipeline runs with an ultra-low latency of under 30 milliseconds, so the visual and auditory feedback feels instantaneous to both the performer and the audience. The system stays at a consistent 60 frames per second (FPS) at 4K resolution, avoiding any immersion-breaking stutter. On the qualitative side, testing with trained dancers looks at creative agency, how intuitively performers can control the rhythm and interpret the visual echo, successfully reviving the classic, improvisational magic of a live jugalbandi in a digital medium."}
             ]
           ]
         }
