@@ -277,8 +277,8 @@ const customtool: Project = {
 
 const aromasense: Project = {
     id: "03",
-    title: "AromaSense:A Mood-to-Scent VR Experience",
-    role: "Concept Design & VR Product Development — (Top 10 US Finalist for L'Oréal Brandstorm 2023)",
+    title: "AromaSense: A Mood-to-Scent VR Experience",
+    role: "Concept Design & VR Product Development",
     description:
       "A VR concept that lets users blend custom L'Oréal fragrances by scanning their mood, face, and voice inside an aromatherapy zen space — Top 10 US Finalist, L'Oréal Brandstorm 2023.",
     tags: ["#VR/AR", "#IMMERSIVE EXPERIENCE", "#PRODUCT DESIGN"],
@@ -463,7 +463,7 @@ const musicalpainting: Project = {
 
 const wirebend: Project = {
   id: "06",
-  title: "3D Unity Software For Wire Bending - Creator Tool",
+  title: "3D Unity Software For Wire Bending",
   role: "Developer",
   description:
     "Turning complex industrial wire bending into an intuitive 3D game.",
