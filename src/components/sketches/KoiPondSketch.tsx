@@ -34,7 +34,7 @@ function sketch(p: P5, container: HTMLDivElement) {
   const FEED_RADIUS = 18;
 
   let fish: Fish[] = [];
-  let ripples: Ripple[] = [];
+  const ripples: Ripple[] = [];
   let lilies: LilyPad[] = [];
   let cherubs: Cherub[] = [];
   let glowOrbs: GlowOrb[] = [];
